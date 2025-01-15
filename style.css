@@ -1,0 +1,278 @@
+:root { 
+  --main_color: #3A82E0;
+  --color1: #4CE03A;
+  --color2: #E0A73A;
+  --color3: #E03AA7;
+  --color4: #536B8B;
+  --color5: #4C614A;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: #3a82e024;
+}
+header{
+  background-color: #699cde5c;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+header > a#logo {
+  font-family: "Chewy", serif;
+  font-size: 40px;
+  color: black;
+  margin-right: 150px;
+  text-decoration: none;
+  padding: 20px;
+}
+
+header > a.bottom_header {
+  font-family: "Roboto", serif;
+  font-size: 25px;
+  color: var(--color5);
+  text-decoration: none;
+  padding: 5px 10px;
+  border: white 1px solid;
+  margin-right: 30px;
+  border-radius: 100px;
+  margin: 10px;
+
+  /* Transição para suavizar o efeito */
+  transition: background-color 0.3s, padding 0.3s;
+}
+
+header > a.bottom_header:hover {
+  background-color: rgba(255, 255, 255, 0.429); /* Fundo branco ao passar o mouse */
+  padding: 6px 12px;
+}
+
+span.icons_header {
+  color: black;
+  background-color: white;
+  border-radius: 100%;
+  padding: 6px;
+  padding-top: 4px;
+  padding-bottom: 6px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.precos {
+  color: white;
+  background-color: black;
+  border-radius: 35px;
+  text-decoration: none;
+  padding: 15px;
+  margin-left: 250px;
+  display: inline-block;
+  margin-right: 20px;
+
+  transition: background-color 0.3s, padding 0.3s;
+}
+
+.precos:hover{
+  background-color: rgba(0, 0, 0, 0.851);
+  padding: 15px 17.5px;
+
+}
+
+main {
+  background-color: #699cde5c;
+  display: flex; /* Adiciona flexbox ao body */
+  justify-content: space-between; /* Espaça os itens para as extremidades */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding-top: 100px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+main > h1 {
+  font-size: 100px;
+  margin: 0; /* Remove margens para evitar espaçamento indesejado */
+}
+
+main > img {
+  width: 450px;
+  border-radius: 5%;
+}
+
+div#submain{
+  background-color: #699cde5c;
+  border-radius: 30px;
+  padding-bottom: 30px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+div#submain > p{
+  width: 900px;
+  padding: 0px 100px;
+  color: var(--color5);
+}
+
+div#main2{
+  padding: 30px;
+  padding-top: 100px;
+}
+
+div#main2 > h2{
+  font-size: 40px;
+}
+
+div#main2 > p{
+  padding: 20px;
+  font-size: 20px;
+  color: var(--color5);
+}
+
+div#main2 > ol{
+  padding: 0px 70px;
+  font-size: 20px;
+  color: var(--color5);
+}
+
+h2#sobre_noz{
+  padding: 30px;
+  padding-bottom: 0;
+  font-size: 40px;
+  display: block;
+}
+
+div#sobre_noz{
+  display: flex; /* Adiciona flexbox ao body */
+  justify-content: space-between; /* Espaça os itens para as extremidades */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding: 60px;
+  padding-left: 50px;
+  padding-top: 0px;
+}
+
+div#sobre_noz > p{
+  width: 800px;
+  font-size: 20px;
+  background-color: #3a82e062;
+  border: 1px solid white;
+  margin-top: 30px;
+  border-radius: 15px;
+  padding: 15px;
+  margin-right: 0px;
+}
+
+div#sobre_noz > img{
+  width: 450px;
+  border-radius: 5%;
+}
+
+div#valores{  
+  display: flex; /* Adiciona flexbox ao body */
+  justify-content: space-between; /* Espaça os itens para as extremidades */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding: 60px;
+  padding-left: 50px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+div#valores_2{  
+  display: flex; /* Adiciona flexbox ao body */
+  justify-content: space-between; /* Espaça os itens para as extremidades */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding: 60px;
+  padding-left: 50px;
+  padding-top: 0px;
+}
+
+h2#valores{
+  font-size: 40px;
+  display: block;
+  text-align: center;
+}
+
+div.text {
+  width: 60%; /* Metade da largura da div#inclusao */
+  height: 100%; /* Mesma altura da div#inclusao */
+  background-color: rgba(255, 255, 255, 0.2); /* Fundo branco semi-transparente */
+  backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+  position: absolute; /* Para posicionamento em relação à div#inclusao */
+  top: 0;
+  right: 0; /* Alinha à direita */
+  border-radius: 10px; /* Borda arredondada */
+  padding: 20px; /* Espaçamento interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona leve sombra */
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+div#inclusao {
+  background-image: url("Image/pexels-fauxels-3184424.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 600px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 30px;
+  position: relative; /* Necessário para posicionar a div.text dentro */
+  overflow: hidden; /* Garante que o conteúdo extra não ultrapasse */
+  margin-bottom: 0px;
+}
+
+div#inovacao {
+  background-image: url("Image/pexels-cottonbro-6153739.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 600px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 30px;
+  position: relative; /* Necessário para posicionar a div.text dentro */
+  overflow: hidden; /* Garante que o conteúdo extra não ultrapasse */
+  margin-bottom: 0px;
+}
+
+div#iniciativa {
+  background-image: url("Image/pexels-thirdman-7656743.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 600px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 30px;
+  margin-top: 0px;
+  position: relative; /* Necessário para posicionar a div.text dentro */
+  overflow: hidden; /* Garante que o conteúdo extra não ultrapasse */
+}
+
+div#sustentabilidade {
+  background-image: url("Image/pexels-pixabay-532192.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 600px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 30px;
+  margin-top: 0px;
+  position: relative; /* Necessário para posicionar a div.text dentro */
+  overflow: hidden; /* Garante que o conteúdo extra não ultrapasse */
+}
+
+
+div.text p {
+  font-size: 28px; /* Ajusta o tamanho da fonte */
+  color: black; /* Usa a cor definida na raiz */
+  text-align: center;
+  padding-top: 70px;
+}
+
+h2#app{
+  padding: 30px;
+}
